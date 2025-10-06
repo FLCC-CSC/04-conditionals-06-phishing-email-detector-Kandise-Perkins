@@ -29,14 +29,15 @@ def phishing_email_detector():
     elif "password reset" in prompt_lower:
         print('LOW RISK: Verify legitimacy with sender.')
     else:
-        print('No phishing indictators detected.')
+        print('No phishing indicators detected.')
 
     print('------------------------')
     print(f'Analyzed subject:"{prompt}"')
 
 
-
+if __name__ == "__main__":
 main()
+
 ########### END YER CODE ABOVE THIS LINE ###########
 
     

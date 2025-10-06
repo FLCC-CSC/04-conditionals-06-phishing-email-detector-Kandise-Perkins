@@ -1,8 +1,8 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Kandise Perkins
+# DATE: October 6, 2025
+# BRIEF DESCRIPTION:  Program that can identify phishing emails based on common red flags and will output risk level
 
 
 
@@ -14,16 +14,29 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+def main():
+    phishing_email_detector()
+def phishing_email_detector():
+    prompt = input('Enter email in subject line: ')
+    prompt_lower = prompt.lower() 
+    print('')
+    print('SECURITY ASSESSMENT:')
+#if
+    if "urgent" in prompt_lower or "immediate action required" in prompt_lower:
+        print('HIGH RISK: Possible phishing attempt.')
+    elif "win" in prompt_lower or "free" in prompt_lower:
+        print('MEDIUM RISK: Suspicious offer detected.')
+    elif "password reset" in prompt_lower:
+        print('LOW RISK: Verify legitimacy with sender.')
+    else:
+        print('No phishing indictators detected.')
+
+    print('------------------------')
+    print(f'Analyzed subject:"{prompt}"')
 
 
 
-
-
-
-
-
-
-
+main()
 ########### END YER CODE ABOVE THIS LINE ###########
 
     
@@ -77,7 +90,7 @@ Analyzed subject: "Did you request a password reset?"
 '''
 
 1. Was using `in` difficult or was it natural?
-
+using in was simple and makes sense I just need to work on getting the formatting correct. 
 
 
 
@@ -98,7 +111,7 @@ Please gauge your utilization of AI on the following spectrum. Place an "X" in f
 of the appropriate response. Only choose one of the following:
 
 [ ] I did not use AI at all for this lab.
-[ ] I wrote the initial draft of the software but had AI help me make it better.
+[x] I wrote the initial draft of the software but had AI help me make it better.
 [ ] I fed the lab description to AI and had it generate a response but I modified it.
 [ ] AI created the entire program for me.
 
@@ -110,7 +123,7 @@ like AI and internet sites like Chegg, CourseHero, StackOverflow, and general Go
 may impede your understanding. Please rate how well you understand the concepts in this lab: 
 
 [ ] I understand very little about this lab.
-[ ] I am about 50/50 on this lab; I get parts of it but not the whole picture.
+[x] I am about 50/50 on this lab; I get parts of it but not the whole picture.
 [ ] I pretty much get it.
 [ ] I'm solid. Totally got it.
 
